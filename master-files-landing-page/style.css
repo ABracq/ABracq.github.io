@@ -1,0 +1,183 @@
+
+/* ---------------------------------------------fonts are all here------------------------------------------------ */
+body{
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+}
+
+/* ----------------------------------------------all stuff about the footer and main go here------------------------------------------*/
+
+main, .apply{
+    display: flex;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 25px;
+    margin: 5px;
+}
+main{
+    background-image: url(images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 77vh;
+    max-width: 1200px auto;
+    display: flex;
+}
+
+/* ------------------------------------------------------------the section with all the info and stuff goes here--------------------------- */
+.insert{
+    margin: 0 auto;
+}
+.apply{
+    background-color: white;
+    box-shadow: 3px 5px 15px gray;
+}
+.text{
+    color: orange;
+}
+
+/*-----------------------------------------footer stuff here------------------------------------------  */
+footer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 25px;
+    margin: 0;
+    height: 25vh;
+    background-color: #fffd8c;
+}
+.p1, .b1, #number, #city, .calculate{  
+    margin: 5px;
+    height: 40%;
+    width: 50%;
+}
+
+.icons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.p1, .b1{
+    display: flex;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+#number, #city, .calculate{
+    flex-direction: row;
+}
+
+.facebook, .instagram, .linkedin, .twitter{
+    margin: 10px;
+}
+
+
+/* ----------------------all divs are here -------------------------- */
+
+.assign, .applied, .names2{
+    display: flex;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+}
+
+.apply{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.box{
+    background-color: #f7f7ff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.ready{
+    font-weight: 600;
+    background-color: #57eeab;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+p, .applied, .applyh2, .applyh4, .text{
+    margin: 0;
+}
+
+.list{
+    background-color: #f7f7ff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 230px;
+}
+.list2{
+    background-color: lightsalmon;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 140px;
+}
+.names3{
+    display: flex;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ----------------------------------------------------------other------------------------------------------- */
+h4{
+    font-weight: 500;
+    max-width: 50vh;    
+}
+h1{
+    font-size: 4rem;
+    max-width: 70vh;
+}
+head{
+    background-color: lightgray;
+}
+.logo1{
+    width: 10%;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------the different screen formats are all here----------------------------------------- */
+
+@media screen and (max-width: 1000px){
+    main, .logoless, .insert, .titles, .top, .names2, .list, .list2{flex-direction: column;}
+
+    main, .logoless, .insert, .titles, .top, .names2, .p1, .b1, .icons{display: flex;}
+
+    .icons{justify-content: space-evenly;}
+
+    h1, h4{margin: 0;}
+
+    .list, .list2, .p1, .b1{width: 100%;}
+
+    footer{height: 100%;}
+
+    .logo1{width: 30%;}
+
+    h1{
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+    .ready{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
