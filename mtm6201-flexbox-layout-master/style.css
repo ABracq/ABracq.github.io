@@ -1,0 +1,76 @@
+/* ---------------------------------base styles-------------------------------------- */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, section, footer{
+    flex-grow: 1;
+    padding: 25px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+/* --------------------------header section------------------------------------------------ */
+header{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.cta{
+    flex-grow: 1;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav-logo{
+    margin-right: auto;
+}
+
+/* ---------------------------about section-------------------------------- */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-block{
+    min-width: 280px;
+    min-height: 300px;
+    margin: 15px;
+    background-color: lightseagreen;
+}
