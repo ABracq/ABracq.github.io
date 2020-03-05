@@ -1,0 +1,299 @@
+/* -------------------------------------------------------------------------------------
+                                this is where the sections start
+----------------------------------------------------------------------------------    */
+
+.nav, .us, .reviews, footer, .choices, .footer2, .banner{
+    display: grid;
+}
+
+.nav, .us, .reviews, footer, .choices, .footer2{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.us, .reviews, .banner{
+    height: 30vh;
+}
+
+.choices, .custom{
+    height: 60vh;
+}
+
+.reviews, option{
+    font-size: 20px;
+}
+
+.nav, footer{
+    height: 20vh;
+    background-color: #E1B863;
+}
+
+.us, .reviews{
+    background-color: #789C97;
+    width: 50%;
+    text-align: left;
+}
+
+.usandreviews, .choices{
+    background-color:#3E6672;
+}
+
+.usandreviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.banner{
+    background-color: #ECEECE;
+    grid-template-rows: 1fr 1fr;
+    width: 1200px;
+}
+
+.custom{
+    background-color: #8E6C47;
+    height: 45vh;
+}
+
+body{
+    max-width: 1500px;
+    margin: auto;
+}
+/* -------------------------------------------------------------------------------------
+                                this is where the sections end
+----------------------------------------------------------------------------------    */
+
+/* -------------------------------------------------------------------------------------
+                        This is where all the classes and divs are
+----------------------------------------------------------------------------------    */
+.bread, .sourdough, .muffins, .bagels, .cakes, .pies, .croissants, .cookies, 
+#imgbread, #imgsour, #imgmuffin, #imgbagel, #imgcake, #imgpie, #imgcroissant, #imgcookie,
+.email1, .phonegroup, .phone1, .emailgroup, .pick1, .pick2, .footersubdiv, .imgroup .app1, .app2, .app3
+ .logo, .flavourcustom, .formcustom, .namecustom, .typecustom{
+    display: flex;
+}
+
+.bread, .sourdough, .muffins, .bagels, .cakes, .pies, .croissants, .cookies, 
+#imgbread, #imgsour, #imgmuffin, #imgbagel, #imgcake, #imgpie, #imgcroissant, #imgcookie,
+.email1, .phonegroup, .phone1, .emailgroup, .footersubdiv, .pick1, .pick2
+.logo, .flavourcustom, .formcustom, .namecustom{
+    flex-direction: column;
+}
+
+.bread, .sourdough, .muffins, .bagels, .cakes, .pies, .croissants, .cookies, 
+#imgbread, #imgsour, #imgmuffin, #imgbagel, #imgcake, #imgpie, #imgcroissant, #imgcookie, select{
+    background-color:#ECEECE;
+    padding: 5px;
+}
+
+.bread2, .sourdough2, .muffins2, .bagels2, .cakes2, .pies2, .croissants2, .cookies2{
+    height: 250px;
+}
+
+.p1, .p2, .p3, #choosen, .anything, .app1, .app2, .app3{
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------------------
+            special case, DONT TOUCH and remove the comment before submitting
+----------------------------------------------------------------------------------    */
+
+.pick1, .pick2, .footersubdiv, .imgroup{
+    display: flex;
+    flex-direction: row;
+}
+
+/* -------------------------------------------------------------------------------------
+            special case, DONT TOUCH and remove the comment before submitting
+----------------------------------------------------------------------------------    */
+.app1, .app2, .app3{
+    width: 100%;
+    height: 100%;
+}
+
+.p1, .p2, .emailgroup{
+    text-align: left;
+}
+
+.imgroup, .footersubdiv{
+    justify-content: space-around;
+}
+
+p, option{
+    font-family: 'Oswald', sans-serif;
+}
+
+.pick1, .pick2{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.p1, .p2{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.imgroup{
+    width: 50px;
+    margin-left: 215px;
+}
+
+.footer2{
+    height: 24.6vh;
+}
+
+.anything{
+    color: #ECEECE;
+}
+
+.p3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.emailgroup{
+    justify-self: left;
+}
+
+.bannerimage{
+    width: 1500px;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.namecustom{
+    margin-left: 40px;
+}
+
+h6{
+    margin: 0;
+    width: 1%;
+    height: 1px;
+}
+
+.logo{
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+/* -------------------------------------------------------------------------------------
+                        This is where all the classes and divs end
+----------------------------------------------------------------------------------    */
+
+/* -------------------------------------------------------------------------------------
+                        this is where the other modifications start
+----------------------------------------------------------------------------------    */
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+br{
+    display: block;
+    margin: 10px 0;
+}
+
+label, ::placeholder, a{
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+a:hover{
+    background-color: #ECEECE;
+}
+
+/* -------------------------------------------------------------------------------------
+                        this is where the other modifications end
+----------------------------------------------------------------------------------    */
+
+/* -------------------------------------------------------------------------------------
+                        this is where the @media query goes
+----------------------------------------------------------------------------------    */
+@media screen and (max-width: 599px){
+
+    .bread2, .sourdough2, .muffins2, .bagels2, .cakes2, .pies2, .croissants2, .cookies2, p, .namecustom{
+        margin: 0;
+    }
+
+    .logo, .nav .nav1, .nav2, .usandreviews, .pick1, .pick2, .typecustom{
+        flex-direction: column;
+    }
+
+    .us, .reviews, #reviews2, option, .banner, .nav{
+        width: 100%;
+    }
+
+    .flavourcustom, .formcustom{
+        flex-direction: row;
+    }
+
+    .nav1, .nav2{
+        margin: 0;
+        background-color: #8E6C47;
+    }
+
+    .choices{
+        height: 2300px
+    }
+
+    .sourdough2{
+        width: 300px;
+    }
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav{
+        height: 30vh;
+    }
+
+    a:hover{
+        background-color: #ECEECE;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .custom{
+        height: 85vh;
+    }
+}
+/* -------------------------------------------------------------------------------------
+                        this is where the @media query ends
+----------------------------------------------------------------------------------    */
+
+/* -------------------------------------------------------------------------------------
+                        this is where the animations go
+----------------------------------------------------------------------------------    */
+.bread:hover, .sourdough:hover, .muffins:hover, .bagels:hover, .cakes:hover, .pies:hover, .croissants:hover, .cookies:hover{
+    transform: scale(1.2);
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+
+.bread:active, .sourdough:active, .muffins:active, .bagels:active, .cakes:active, .pies:active, .croissants:active, .cookies:active, a:active{
+    background-color: #8E6C47;
+}
+
+@keyframes logo{
+    0%{
+        transform: translate(-500px, 0px);
+    }
+    100%{
+        transform: translate(0px)
+    }
+}
+/* -------------------------------------------------------------------------------------
+                        this is where the animations stop
+----------------------------------------------------------------------------------    */

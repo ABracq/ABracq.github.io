@@ -2,13 +2,11 @@
 /* ---------------------------------------------fonts are all here------------------------------------------------ */
 body{
 font-family: 'Montserrat', sans-serif;
-margin: 0;
 }
 
 /* ----------------------------------------------all stuff about the footer and main go here------------------------------------------*/
 
 main, .apply{
-    display: flex;
     box-sizing: border-box;
     flex-grow: 1;
     padding: 25px;
@@ -20,24 +18,19 @@ main{
     background-position: center;
     min-height: 77vh;
     max-width: 1200px auto;
-    display: flex;
 }
 
 /* ------------------------------------------------------------the section with all the info and stuff goes here--------------------------- */
-.insert{
-    margin: 0 auto;
-}
+.insert{margin: 0 auto;}
+
 .apply{
     background-color: white;
     box-shadow: 3px 5px 15px gray;
 }
-.text{
-    color: orange;
-}
+.text{color: orange;}
 
 /*-----------------------------------------footer stuff here------------------------------------------  */
 footer{
-    display: flex;
     flex-direction: column;
     box-sizing: border-box;
     flex-grow: 1;
@@ -52,18 +45,18 @@ footer{
     width: 50%;
 }
 
-.icons{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-}
-
 .p1, .b1{
-    display: flex;
     height: 20%;
     margin: 0;
     padding: 0;
 }
+
+.icons{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
 
 #number, #city, .calculate{
     flex-direction: row;
@@ -76,17 +69,15 @@ footer{
 
 /* ----------------------all divs are here -------------------------- */
 
-.assign, .applied, .names2{
+.assign, .applied, .names2, .names3, .titles, .apply, .check, .p1, .b1, .icons, footer, main{
     display: flex;
 }
 
 .titles{
-    display: flex;
     flex-direction: column;
 }
 
 .apply{
-    display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
@@ -104,7 +95,7 @@ footer{
     text-align: center;
     font-size: 30px;
 }
-p, .applied, .applyh2, .applyh4, .text{
+p, .applied, .applyh2, .applyh4, .text, body{
     margin: 0;
 }
 
@@ -123,12 +114,8 @@ p, .applied, .applyh2, .applyh4, .text{
     color: white;
     width: 140px;
 }
-.names3{
-    display: flex;
-}
 
 .check{
-    display: flex;
     flex-direction: row;
 }
 
