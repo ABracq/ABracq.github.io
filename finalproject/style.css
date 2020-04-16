@@ -1,0 +1,189 @@
+/* ----------------------------------this is where the colors and fonts of the website will be----------------------------------- */
+h2, button{font-family: 'Nunito', sans-serif;}
+p, a{font-family: 'Barlow', sans-serif;}
+/* ----------------------------------this is where the colors and fonts of the website end----------------------------------- */
+/* ----------------------------------this is where the divs will be----------------------------------- */
+body, ul{margin: 0;}
+
+header, section, footer, .secnum2, .secnum3, .divnum1, .h2num3, .pnum6, .btnnum1{display: grid;}
+header, .secnum3{grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;}
+
+section, footer, .divnum1{grid-template-columns: 20% 20% 20% 20% 20%;}
+section{grid-template-rows: 25% 25% 25% 25%;}
+
+footer, ul, a, .h2num1, .pnum1, .btnnum1{color: white;}
+footer{
+    background: #303C3D;
+    margin-top: 20px;}
+
+ul, .divnum1, .anum2, .anum5, .btnnum1, .anum6{background-color: #789288;}
+ul{
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;}
+
+li, a, .anum3, .anum4, .btnnum1{text-decoration: none;}
+li, .anum3, .anum4, .h2num2, .pnum2, .btnnum1{text-align: center;}
+li, .anum3, .anum4{display: block;}
+li{float: left;}
+
+.secnum2, .h2num4{margin: 10px;}
+.secnum2, .secnum4{
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;}
+
+ .divnum1{
+    margin-top: 50px;
+    margin-bottom: 50px;}
+
+.divnum2{grid-column: 5;}
+
+.divnum3{grid-column: 2;}
+
+.divnum4{grid-column: 4;}
+/* ----------------------------------this is where the divs end----------------------------------- */
+/* ----------------------------------this is where the text styles (h2, a, p) will be----------------------------------- */
+.anum2{max-width: 20px;}
+
+.anum3, .anum4{padding: 14px 16px;}
+
+.anum5{color: black;}
+
+.h2num1, .pnum1, .h2num2, .pnum2{grid-column: 3;}
+.h2num1, .pnum1, .h2num2{
+    margin-top: 0;
+    margin-bottom: 0;}
+
+.h2num3{grid-column: 1;}
+
+.pnum1{font-size: 1.1rem;}
+
+.pnum3, .imgnum7v4{grid-row: 2;}
+
+.pnum3{padding: 5px;}
+
+.pnum4, .pnum6{grid-column-end: 4;}
+.pnum4{grid-column-start: 2;}
+
+.pnum6{grid-column-start: 1;}
+/* ----------------------------------this is where the text styles end----------------------------------- */
+/* ----------------------------------this is where the hovers and actives will be----------------------------------- */
+a:hover{background-color: #789288;}
+a:active{background-color: #624442;}
+
+.btnnum1:hover{
+    background-color: #303C3D;
+    border-radius: 10px;}
+.btnnum1:active{background-color: #624442;}
+
+.anum2:hover{background-color: white;}
+
+.anum3:hover{background-color: #624442;}
+.anum3:active{background-color: #303C3D;}
+
+.anum4:hover{background-color: #624442;}
+.anum4:active{background-color: #303C3D;}
+
+.anum5:hover{background-color: #624442;}
+.anum5:active{
+    background-color: #303C3D;
+    color: white;}
+
+.anum6:hover{background-color: #624442;}
+.anum6:active{background-color: #789288;}
+/* ----------------------------------this is where the hovers end----------------------------------- */
+/* ----------------------------------this is where the images will be----------------------------------- */
+.imgnum1, .imgnum2, .imgnum3, .imgnum4, .imgnum5, .imgnum6, .imgnum7, .imgnum7v2, .imgnum7v3, .imgnum7v4{height: auto;}
+.imgnum1, .imgnum5{
+    grid-column-start: 5;
+    width: 500%;}
+
+.imgnum2, .imgnum3, .imgnum4, .imgnum7, .imgnum7v2, .imgnum7v3, .imgnum7v4, .imgnum7v5{width: 200%;}
+.imgnum2{grid-column: 1;}
+
+.imgnum3{
+    grid-row: 1;
+    max-width: 300px;}
+
+.imgnum4{max-width: 275px;}
+
+.imgnum6{
+    grid-column-start: 1;
+    width: 400%;
+    max-width: 1000px;}
+
+.imgnum7, .imgnum7v3{grid-column: 3;}
+
+.imgnum7v2, .imgnum7v4{grid-column: 7;}
+
+.imgnum7v5{grid-column: 2;}
+/* ----------------------------------this is where the images end----------------------------------- */
+/* ----------------------------------this is where the button will be----------------------------------- */
+.btnnum1{
+    grid-row: 3;
+    border: none;
+    padding: 15px 12px;
+    width: 100%;
+    max-width: 200px;
+    min-width: 170px;
+    height: 30px;
+    font-size: 20px;}
+/* ----------------------------------this is where the button ends----------------------------------- */
+/* ----------------------------------this is where the breakpoint start----------------------------------- */
+@media screen and (max-width: 880px){
+    header, .secnum3{grid-template-columns: 25% 25% 25% 25%;}
+    header{grid-template-rows: 100%;}
+
+    section, footer{grid-template-columns: 25% 50% 25%;}
+    section{grid-template-rows: 50% 50%;}
+
+    footer, .secnum3{grid-template-rows: 25% 25% 25% 25%;}
+    footer{height: 20rem;}
+
+    ul, li, .imgnum7, .imgnum7v2{width: 100%;}
+    ul{display: block;}
+
+    li{padding: 0;}
+
+    .secnum3{margin-bottom: 0px; grid-template-columns: 25% 25% 25% 25%;}
+
+    .secnum4{grid-template-columns: 20% 20% 20% 20% 20%;}
+
+    .divnum1, .divnum2{margin-top: 20px;}
+    .divnum1{grid-template-columns: 30% 40% 30%;}
+
+    .divnum2, .imgnum7v2, .imgnum7v4{grid-row: 3;}
+    .divnum2{text-align: center;}
+    
+    .divnum3, .imgnum2, .imgnum7, .imgnum7v3{grid-row: 1;}
+
+    .divnum4, .h2num2, .pnum1, .h2num1, .pnum3, .pnum2, .divnum2, .imgnum2, .imgnum7, .imgnum7v2, .imgnum7v3, .imgnum7v4{grid-column: 2;}
+    .divnum4, .pnum3{grid-row: 2;}
+    
+    .anum3{box-sizing: border-box;}
+
+    .h2num3, .pnum6{grid-column-start: 2;}
+
+    .pnum2{
+        grid-row: 4;
+        margin-bottom: 0;}
+
+    .pnum3{margin: 0;}
+
+    .imgnum1, .imgnum5{visibility: hidden;}
+
+    .imgnum2, .imgnum7, .imgnum7v2, .imgnum7v4{width: 200%;}
+    .imgnum2{z-index: 1;}
+
+    .imgnum3, .imgnum4{max-width: 100%;}
+
+    .imgnum7, .imgnum7v2, .imgnum7v3, .imgnum7v2, .imgnum7v4{height: auto;}
+    .imgnum7{max-height: 500px;}
+
+    .imgnum7v5{
+        grid-column-end: 3;
+        width: 300%;}
+}
+/* ----------------------------------this is where the breakpoint ends----------------------------------- */
